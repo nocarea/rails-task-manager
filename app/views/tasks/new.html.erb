@@ -1,0 +1,10 @@
+<%= simple_form_for (@task) do |f| %>
+  <%= f.input :title %>
+<br>
+  <%= f.input :details %>
+<br>
+  <%= f.label :completed %>
+  <%= f.check_box :completed %>
+<br>
+  <%= f.submit class: "btn btn-primary mt-4"%>
+<% end %>
